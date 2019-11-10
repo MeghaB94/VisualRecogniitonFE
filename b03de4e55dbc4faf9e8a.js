@@ -137,7 +137,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/";
+/******/ 	__webpack_require__.p = "/VisualRecogniitonFE/";
 /******/
 /******/ 	var jsonpArray = window["webpackJsonp"] = window["webpackJsonp"] || [];
 /******/ 	var oldJsonpFunction = jsonpArray.push.bind(jsonpArray);
@@ -319,7 +319,7 @@ var visualRecog = {
   apiKey: "cm3HgaDCSOtpgHRBRkor37HkR_3L93XAWLqOfZsuYlBV",
   apiUrl: "https://gateway.watsonplatform.net/visual-recognition/api/v3/classify?version=2018-03-19"
 };
-var baseUrl = "/";
+var baseUrl = "/VisualRecogniitonFE/";
 // CONCATENATED MODULE: ./src/components/Header.js
 
 
@@ -805,4 +805,4 @@ module.exports = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwg
 /***/ })
 
 /******/ });
-//# sourceMappingURL=34056f525f81f5b257e1.js.map
+//# sourceMappingURL=b03de4e55dbc4faf9e8a.js.map
