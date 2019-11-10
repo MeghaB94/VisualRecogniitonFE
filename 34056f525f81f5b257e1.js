@@ -137,7 +137,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/VisualRecogniitonFE/";
+/******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	var jsonpArray = window["webpackJsonp"] = window["webpackJsonp"] || [];
 /******/ 	var oldJsonpFunction = jsonpArray.push.bind(jsonpArray);
@@ -314,7 +314,14 @@ var Menu = __webpack_require__(128);
 // EXTERNAL MODULE: ./node_modules/@material-ui/core/esm/MenuItem/MenuItem.js + 2 modules
 var MenuItem = __webpack_require__(129);
 
+// CONCATENATED MODULE: ./src/services/index.js
+var visualRecog = {
+  apiKey: "cm3HgaDCSOtpgHRBRkor37HkR_3L93XAWLqOfZsuYlBV",
+  apiUrl: "https://gateway.watsonplatform.net/visual-recognition/api/v3/classify?version=2018-03-19"
+};
+var baseUrl = "/";
 // CONCATENATED MODULE: ./src/components/Header.js
+
 
 
 
@@ -356,12 +363,12 @@ var Header_Header = function Header(_ref) {
     onClick: handleClose
   }, react_default.a.createElement(react_router_dom["b" /* Link */], {
     className: styles_default.a.link,
-    to: "/"
+    to: "".concat(baseUrl)
   }, "Image Recognition Watson")), react_default.a.createElement(MenuItem["a" /* default */], {
     onClick: handleClose
   }, react_default.a.createElement(react_router_dom["b" /* Link */], {
     className: styles_default.a.link,
-    to: "/speech"
+    to: "".concat(baseUrl, "speech")
   }, "Speech To Text")))));
 };
 // CONCATENATED MODULE: ./src/components/index.js
@@ -380,11 +387,6 @@ var Paper = __webpack_require__(125);
 // EXTERNAL MODULE: ./node_modules/@material-ui/core/esm/Button/Button.js
 var Button = __webpack_require__(126);
 
-// CONCATENATED MODULE: ./src/services/index.js
-var visualRecog = {
-  apiKey: "cm3HgaDCSOtpgHRBRkor37HkR_3L93XAWLqOfZsuYlBV",
-  apiUrl: "https://gateway.watsonplatform.net/visual-recognition/api/v3/classify?version=2018-03-19"
-};
 // CONCATENATED MODULE: ./src/routes/watson.js
 
 
@@ -579,15 +581,16 @@ var react_router = __webpack_require__(22);
 
 
 
+
 /* harmony default export */ var routes = (function (props) {
   return react_default.a.createElement(react_router_dom["a" /* BrowserRouter */], null, react_default.a.createElement(Header_Header, null), react_default.a.createElement("div", {
     className: styles_default.a.mainWrapper
   }, react_default.a.createElement(react_router["c" /* Switch */], null, react_default.a.createElement(react_router["a" /* Route */], {
     exact: true,
-    path: "/"
+    path: "".concat(baseUrl)
   }, react_default.a.createElement(watson, null)), react_default.a.createElement(react_router["a" /* Route */], {
     exact: true,
-    path: "/speech"
+    path: "".concat(baseUrl, "speech")
   }, react_default.a.createElement(speechtotext, null)))));
 });
 // CONCATENATED MODULE: ./src/index.js
@@ -802,4 +805,4 @@ module.exports = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwg
 /***/ })
 
 /******/ });
-//# sourceMappingURL=6eb0c3b20054d32046e2.js.map
+//# sourceMappingURL=34056f525f81f5b257e1.js.map
